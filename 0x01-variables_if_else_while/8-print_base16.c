@@ -10,17 +10,17 @@
 
 int main(void)
 {
-	int i = 0;
+	unsigned int i = 0;
 	char x, y = 'a';
 
 	for (; i < 10; i++)
 	{
-		x = (char)i;
+		x = (unsigned char)i;
 		putchar(x);
 	}
 	for (; y <= 'f'; y++)
 		putchar(y);
 	putchar('\n');
-	
+
 	return (0);
 }
