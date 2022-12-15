@@ -6,7 +6,7 @@
  * Return: no return value
  */
 
-void print_numbers(void)
+void more_numbers(void)
 {
 	int a = 0;
 
