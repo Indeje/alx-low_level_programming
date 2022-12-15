@@ -2,6 +2,7 @@
 
 /**
  * _islower - Checks if passed argument is lowercase character
+ * @c: character to check in ASCII code
  *
  * Return: 1 if lowercase; 0 otherwise
  */
