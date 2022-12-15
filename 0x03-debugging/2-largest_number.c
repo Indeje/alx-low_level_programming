@@ -17,12 +17,12 @@ int largest_number(int a, int b, int c)
 		if (b > c || a > c)
 			largest = a;
 	}
-	if (b > c)
+	else if (b > c)
 	{
 		if (c > a || b > a)
 			largest = b;
 	}
-	if (c > a)
+	else if (c > a)
 	{
 		if (a > b || c > b)
 			largest = c;
