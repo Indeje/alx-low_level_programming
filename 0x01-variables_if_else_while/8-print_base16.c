@@ -10,14 +10,15 @@
 
 int main(void)
 {
-	unsigned int i = 0;
-	char x, y = 'a';
+	int i = '0';
 
-	for (; i < 10; i++)
+	for (; i <= '9'; i++)
 	{
-		x = (unsigned char)i;
-		putchar(x);
+		putchar(i);
 	}
+
+	char y = 'a';
+
 	for (; y <= 'f'; y++)
 		putchar(y);
 	putchar('\n');
