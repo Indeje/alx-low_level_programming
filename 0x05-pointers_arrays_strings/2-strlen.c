@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** _strlen - calculate length of string
+/**
+ * _strlen - calculate length of string
  * @s: string to establish length of
  *
  * Return: length of string s
