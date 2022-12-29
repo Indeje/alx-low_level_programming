@@ -16,13 +16,17 @@ int _strcmp(char *s1, char *s2)
 	while (s1[count_s1] != '\0')
 	{
 		x = s1[count_s1];
+		_putchar(x);
 		sum_s1 += x;
+		_putchar(sum_s1);
 		count_s1++;
 	}
 	while (s2[count_s2] != '\0')
 	{
 		x = s2[count_s2];
+		_putchar(x);
 		sum_s2 += x;
+		_putchar(sum_s2);
 		count_s2++;
 	}
 
