@@ -6,29 +6,15 @@
  * @s1: first string
  * @s2: second string
  *
- * Return: -1 if s1 < s2, 0 if s1 == s2, 1 if s1 > s2
+ * Return: negative if s1 < s2, 0 if s1 == s2, positive if s1 > s2
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int count_s1 = 0, count_s2 = 0, sum_s1 = 0, sum_s2 = 0, x;
+	int i = 0;
 
-	while (s1[count_s1] != '\0')
-	{
-		x = s1[count_s1];
-		_putchar(x);
-		sum_s1 += x;
-		_putchar(sum_s1);
-		count_s1++;
-	}
-	while (s2[count_s2] != '\0')
-	{
-		x = s2[count_s2];
-		_putchar(x);
-		sum_s2 += x;
-		_putchar(sum_s2);
-		count_s2++;
-	}
+	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
+		i++;
 
-	return (sum_s1 - sum_s2);
+	return (s1[i] - s2[i]);
 }
