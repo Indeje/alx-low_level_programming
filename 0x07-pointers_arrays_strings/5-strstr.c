@@ -16,10 +16,10 @@ char *_strstr(char *haystack, char *needle)
 	{
 		while (*(haystack + a + b) == *(needle + b))
 		{
-			b++;
-
 			if (!(*(needle + b)))
 				return (haystack + a);
+
+			b++;
 		}
 
 		a++;
