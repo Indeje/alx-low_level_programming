@@ -14,13 +14,16 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*(haystack + a))
 	{
-		while (*(haystack + a + b) == *(needle + b))
+		while (*(needle + b))
 		{
-			if (!(*(needle + b)))
-				return (haystack + a);
+			if (*(haystack + a + b) != *(needle + b))
+				break;
 
 			b++;
 		}
+
+		if (!(*(needle + b)))
+			return (haystack + a);
 
 		a++;
 	}
