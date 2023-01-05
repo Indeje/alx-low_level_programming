@@ -8,3 +8,5 @@ int is_prime_number(int n);
 int _putchar(int);
 int natural_root(int, int);
 int check_prime(int, int);
+int is_palindrome(char *);
+int check_palindrome(char *, int, int);
