@@ -14,7 +14,7 @@ int is_prime_number(int n)
 
 
 /**
- * check_prime - test if any integer is divisible by n starting from 2 upto 1/2n
+ * check_prime - test if any integer is divisible by n from 2 upto 1/2n
  * @n: number to check if prime
  * @a: divisor
  *
