@@ -18,17 +18,25 @@ char *str_concat(char *s1, char *s2)
 
 	if (ptr)
 	{
-		while (s1[i] != '\0')
+		if (!(s1))
 		{
-			ptr[i] = s1[i];
-			i++;
+			for (i = 0; s2[i] != '\0'; i++)
+				ptr[i] = s2[i];
 		}
-		while (s2[j] != '\0')
+		else if (!(s2))
 		{
-			ptr[i] = s2[j];
-			i++;
-			j++;
+			for (i = 0; s1[i] != '\0'; i++)
+				ptr[i] = s1[i];
 		}
+		else
+		{
+			for (i = 0; s1[i] != '\0'; i++)
+				ptr[i] = s1[i];
+
+			for (j = 0; s2[j] != '\0'; i++, j++)
+				ptr[i] = s2[j];
+		}
+
 		ptr[i] = '\0';
 
 		return (ptr);
