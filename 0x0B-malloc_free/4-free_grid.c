@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * free_grid - free 2D grid
  * @grid: pointer to memory block
