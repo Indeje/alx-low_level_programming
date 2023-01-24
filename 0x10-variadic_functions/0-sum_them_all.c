@@ -15,15 +15,17 @@ int sum_them_all(const unsigned int n, ...)
 	int sum = 0;
 	unsigned int i = 0;
 
-	va_start(li, n);
-
 	if (n)
 	{
+		va_start(li, n);
+
 		for (; i < n; i++)
 			sum += va_arg(li, int);
+
+		va_end(li);
+
+		return(sum);
 	}
 
-	va_end(li);
-
-	return (sum);
+	return (0);
 }
