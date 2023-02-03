@@ -23,5 +23,5 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (newnode_ptr);
 	}
 
-	return (0);
+	return (NULL);
 }
